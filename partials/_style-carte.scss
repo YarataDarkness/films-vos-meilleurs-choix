@@ -35,11 +35,11 @@ body{
     margin-bottom: 5px;
     border-style: none;
 
-    background: color.adjust(variables.$primary, $whiteness: 25%);
+    background: color.adjust(variables.$primary, $lightness: 25%);
 }
 
 .top-picks{
-    background: color.adjust(variables.$primary, $whiteness: 5%);
+    background: color.adjust(variables.$primary, $lightness: 5%);
 }
 
 .top-picks__header{
