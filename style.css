@@ -18,6 +18,10 @@
   margin: 0 -5px;
 }
 
+body {
+  background-color: #73BA9B;
+}
+
 .card {
   background-color: #73BA9B;
   margin: 5px;

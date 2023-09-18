@@ -4,6 +4,11 @@
 
 @use 'mixins/text';
 
+
+body{
+    background-color: variables.$primary;
+}
+
 .card{
     background-color: variables.$primary;
     margin: 5px;
