@@ -1,5 +1,13 @@
+@use 'variables';
+
 
 .card{
-    background-color: $primary;
+    background-color: variables.$primary;
+    margin: 5px;
+
+}
+
+.card_btn{
+    width: auto;
 }
 
