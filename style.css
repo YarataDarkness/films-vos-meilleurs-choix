@@ -23,6 +23,39 @@
   margin: 5px;
 }
 
-.card_btn {
+.card__btn {
   width: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-style: none;
+  background: #99baac;
+  font-size: 10px;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.card__btn:hover {
+  width: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-style: none;
+  background: #b3bab7;
+}
+
+.top-picks {
+  background: #80baa1;
+}
+
+.top-picks__header {
+  color: white;
+}
+
+.top-picks__desc {
+  font-size: 10px;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }/*# sourceMappingURL=style.css.map */
