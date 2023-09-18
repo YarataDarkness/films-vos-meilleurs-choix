@@ -24,6 +24,8 @@ body{
     background: color.adjust(variables.$primary, $whiteness: 15%);
 
     @include text.small-cap;
+
+    color: color.complement(variables.$primary);
     
 }
 
