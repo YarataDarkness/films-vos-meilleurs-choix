@@ -1,3 +1,9 @@
 @use 'partials/top-picks';
 
 @use 'partials/style-carte';
+
+@use 'variables';
+
+body{
+    background-color: variables.$primary;
+}
