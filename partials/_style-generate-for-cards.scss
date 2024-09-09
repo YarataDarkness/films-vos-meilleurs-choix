@@ -1,0 +1,37 @@
+@use 'variables';
+
+@use "sass:color"; 
+
+@mixin bgcolor{
+    background-color: #73BA9B;
+}
+
+body{
+   @include bgcolor;
+}
+
+
+$color: #73BA9B;
+
+.card{
+    margin: 5px;
+    padding: 5px;
+
+
+    &__btn{
+        width:inherit;
+
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+        border:none;
+
+        background-color: color.adjust($color, $lightness: 15%);
+
+        text-emphasis-color: color.adjust($color, $complement);
+    };
+
+    &__btn:hover{
+        background-color: color.adjust($color, $lightness: 25%);
+    }
+}
