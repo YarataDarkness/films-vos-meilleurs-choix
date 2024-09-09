@@ -28,7 +28,7 @@ $color: #73BA9B;
 
         background-color: color.adjust($color, $lightness: 15%);
 
-        text-emphasis-color: color.adjust($color, $complement);
+        color: color.complement($color);
     };
 
     &__btn:hover{

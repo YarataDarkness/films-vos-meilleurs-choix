@@ -32,6 +32,7 @@ body {
   padding-bottom: 5px;
   border: none;
   background-color: #a6d3c0;
+  color: #ba7392;
 }
 .card__btn:hover {
   background-color: #c8e4d8;
