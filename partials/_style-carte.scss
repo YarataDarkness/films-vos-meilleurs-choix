@@ -1,0 +1,54 @@
+@use 'variables';
+
+@use "sass:color";
+
+@use 'mixins/text';
+
+
+body{
+    background-color: variables.$primary;
+}
+
+.card{
+    background-color: variables.$primary;
+    margin: 5px;
+
+}
+
+.card__btn{
+    width: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-style: none;
+
+    background: color.adjust(variables.$primary, $whiteness: 15%);
+
+    @include text.small-cap;
+
+    color: color.complement(variables.$primary);
+    
+}
+
+
+
+.card__btn:hover{
+    width: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-style: none;
+
+    background: color.adjust(variables.$primary, $lightness: 25%);
+}
+
+.top-picks{
+    background: color.adjust(variables.$primary, $lightness: 5%);
+}
+
+.top-picks__header{
+    color: white;
+}
+
+.top-picks__desc{
+    @include text.small-cap;
+}
+
