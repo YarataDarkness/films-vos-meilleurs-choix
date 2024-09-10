@@ -2,8 +2,10 @@
 
 @use "sass:color"; 
 
+@use 'mixins/text';
+
 @mixin bgcolor{
-    background-color: #73BA9B;
+    background-color: $primary;
 }
 
 body{
@@ -11,7 +13,7 @@ body{
 }
 
 
-$color: #73BA9B;
+$color: $primary;
 
 .card{
     margin: 5px;
@@ -29,9 +31,23 @@ $color: #73BA9B;
         background-color: color.adjust($color, $lightness: 15%);
 
         color: color.complement($color);
+
+        @include text.small-cap;
     };
 
     &__btn:hover{
         background-color: color.adjust($color, $lightness: 25%);
+    }
+}
+
+.top-picks{
+    background-color: color.adjust($color, $lightness: 5%);
+
+    &__header{
+        color: white;
+    }
+
+    &__desc{
+        @include text.small-cap;
     }
 }
